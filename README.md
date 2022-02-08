@@ -1,9 +1,9 @@
 # projet_tas_de_sable
 projet
 #########################################
-# groupe MPCI 3
-# Toto LEHERO
-# Titi LEVAINQUEUR
-# etc...
-# https://github.com/uvsq-info/l1-python
+# groupe MIASHS 2
+# XinLei YANG
+# Frederique NGOMA
+# MOANA MAUCLAIRE
+# https://github.com/uvsq22106398/projet_tas_de_sable
 #########################################
