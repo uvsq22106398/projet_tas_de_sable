@@ -9,53 +9,26 @@
 #########################################################
 
 #######################
-# import des librairies
-import tkinter
 import tkinter as tk
 import random as rd
-
-
-############################
-# Définition des constantes
-LARGEUR=100
-LONGUEUR= 100
-
-############################
-# Definition des variables globale
+LARGEUR = 100
+LONGUEUR = 100
 list3 = []
-
-
-
-############################
-# Boucles
-
 for i in range(9):
-    a = rd.randint(1,9)
+    a = rd.randint(1, 9)
     list3.append(a)
+# def configuration():
+# Matrice = []
+# for j in range(3):
+# col = []
+# for i in range(3):
+# col.append(0)
+# Matrice.append(col)
 
-
-#######################
-# fonctions
-
-
-#def configuration():
-   # Matrice = []
-    #for j in range(3):
-       #col = []
-       #for i in range(3):
-           #col.append(0)
-       #Matrice.append(col)
-
-    #for col in Matrice:
-         #for elem in col:
-            #print(elem, end = " ")
-         #print()
-
-
-
-#######################
-# programme principal
-# définition des widgets
+# for col in Matrice:
+# for elem in col:
+# print(elem, end = " ")
+# print()
 racine = tk.Tk()
 racine.title("Tas de sable")
 canvas = tk.Canvas(racine, width=LARGEUR, height=LONGUEUR)
@@ -69,16 +42,16 @@ label6 = tk.Label(racine, text=str(list3[5]))
 label7 = tk.Label(racine, text=str(list3[6]))
 label8 = tk.Label(racine, text=str(list3[7]))
 label9 = tk.Label(racine, text=str(list3[8]))
+labell = [label1, label2, label3, label4, label5, label6, label7, label8, label9]
 
-list2 = [label1,label2,label3,label4,label5,label6,label7,label8,label9]
+
 def refresh_court():
-    for i in range(9):
+    for i in labell:
         b = rd.randint(1, 9)
-        list2[i].config(text=str(b))
+        i.config(text=str(b))
 
 
-
-button1=tk.Button(racine, text='generer',command=refresh_court())
+butt = tk.Button(racine, text='refresh', command=refresh_court)
 
 # placement des widgets
 label1.grid(row=0, column=0)
@@ -90,7 +63,7 @@ label6.grid(row=1, column=2)
 label7.grid(row=2, column=0)
 label8.grid(row=2, column=1)
 label9.grid(row=2, column=2)
-button1.grid(row=3, column=1)
+butt.grid(row=3, column=1)
 
 # boucle principale
 racine.mainloop()
