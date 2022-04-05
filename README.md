@@ -1,7 +1,7 @@
 # projet_tas_de_sable
 projet
 #########################################
-# groupe MIASHS 2
+# groupe 7 MIASHS 2
 # XinLei YANG
 # Frederique Jennifer NGOMA
 # MOANA MAUCLAIRE
